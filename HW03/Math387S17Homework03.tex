@@ -1,0 +1,117 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+\newcommand{\hwnum}{3}
+\newcommand{\duedate}{Thursday, February 9}
+\newcommand{\problist}{
+{\bf 1.3} \{3,4\} \\
+{\bf 1.4} \{1,2\} \\
+{\bf 2.1} \{1,5,9\}}
+
+\newcommand{\unassigned}{
+\flushleft
+Unassigned, but suggested: Problems 5,7 in Section 1.3 \\
+Unassigned, but suggested: Problem 6 in Section 1.4 \\
+Unassigned, but suggested: Problems 6, 10, 15 in Section 2.1
+}
+% The Course page: http://turing.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=================== Important preamble file
+% contains macro definitions of mysolution, myreview, myupdatedsolution
+\usepackage{preamble387S17}
+
+%=================== Useful Commands
+\newcommand{\rednote}[1]{{\color{red} #1}}
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+
+
+\begin{document}
+\setcounter{section}{2}
+\section{Homework \hwnum}
+\emph{ \unassigned}
+
+%--------------------------Question
+\subsection{1.3.3} Find a number $M$ such that $\sabs{x^3-x^2+8x} \leq M$ for all $-2 \leq x \leq 10$.
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{1.3.4}Finish the proof of Proposition 1.3.7.
+That is, prove that
+given any set $D$,
+and two bounded functions
+$f \colon D \to \R$ and $g \colon D \to \R$ 
+such that $f(x) \leq g(x)$ for all $x \in D$, then 
+\begin{equation*}
+\inf_{x\in D} f(x) \leq \inf_{x\in D} g(x) .
+\end{equation*}
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{1.4.1}For $a < b$, construct an explicit bijection from $(a,b]$ to $(0,1]$.
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{1.4.2}Suppose $f \colon [0,1] \to (0,1)$ is a bijection.
+Using $f$, construct a
+bijection from $[-1,1]$ to $\R$.
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+%--------------------------Question
+\subsection{2.1.1}
+Is the sequence
+$\{ 3n \}$
+bounded?  Prove or disprove.
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{2.1.5}Is the sequence
+$\left\{ \dfrac{n}{n+1} \right\}$
+convergent?  If so, what is the limit?
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{2.1.9}Show that the sequence
+$\left\{ \dfrac{1}{\sqrt[3]{n}} \right\}$ is monotone, bounded, and use
+Theorem 2.1.10 to find the limit.
+\iftoggle{showsolutions}{\begin{solution} 
+
+\end{solution}}{}
+
+
+
+\end{document}

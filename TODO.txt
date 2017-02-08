@@ -1,0 +1,6 @@
+Homework:
+In each HWXX folder, do the following
+rm *.txt *.pdf *.aux *.log *.synctex.gz
+mv Math387S16Homework3.tex Math387S17Homework03.tex
+
+Insert preamble

@@ -1,0 +1,36 @@
+/* slightly modified sample from epix samples gallery */
+#include "epix.h"
+using namespace ePiX;
+
+const int N(8); // Number of rectangles
+
+// gather references to integrand
+double f(double t)
+{
+  return -t*(t-2)*(t-3)/2+1.5;
+}
+
+int main()
+{
+  picture(P(0,0), P(3,2), "3x2in");
+
+  begin();
+
+  const double dx(xsize()/N);
+
+  riemann_sum(f, xmin(), xmax(), N, UPPER);
+
+  fill(Black(0.1));
+  riemann_sum(f, xmin(), xmax(), N, LOWER);
+  nofill();
+
+  h_axis(xsize());
+  v_axis(ysize());
+
+  bold();
+  plot(f, xmin(), xmax(), 40);
+
+  tikz_format();
+  end();
+}
+

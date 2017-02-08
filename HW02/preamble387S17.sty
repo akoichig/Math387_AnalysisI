@@ -1,0 +1,78 @@
+\ProvidesPackage{preamble387S17}
+
+% Manhattan College Math 387 Spring 2017 Preamble
+% Created by Andrew Koichi Greene (2017) 
+% Conctact andrew.greene@manhattan.edu if you have questions or suggestions.
+
+\newcommand{\semester}{Spring 2017}
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs are to be typed in the \mysolution{ } blocks 
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate
+   }
+\chead{ \underline{\textsf{Problem List}}\\[3pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{0 pt}%-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newcommand{\mysolution}[1]{\iftoggle{showsolutions}{\begin{solution} {#1}\end{solution}}{}}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+%=================== Review environment
+\newcommand{\myreview}[1]{\iftoggle{showsolutions}{\begin{review} {#1}\end{review}}{}}
+\newenvironment{review}
+    {\begin{mdframed}\begin{proof}[\itshape Review]}
+    {\end{proof}\end{mdframed}}
+
+%=================== Updated solution environment
+\newcommand{\myupdatedsolution}[1]{\iftoggle{showsolutions}{\begin{updatedsolution} {#1}\end{updatedsolution}}{}}
+\newenvironment{updatedsolution}
+    {\begin{mdframed}\begin{proof}[\itshape Updated Solution]}
+    {\end{proof}\end{mdframed}}

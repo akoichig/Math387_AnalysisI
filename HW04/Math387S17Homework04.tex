@@ -1,0 +1,153 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\hwnum}{4}
+\newcommand{\duedate}{Thursday, February 16}
+\newcommand{\problist}{
+{\bf 2.2} \{3,6,9\} \\
+{\bf 2.3} \{1,3,5,9\}
+}
+
+\newcommand{\unassigned}{
+\flushleft Unassigned, but suggested: Problems 7, 8 in Section 2.2\\
+Unassigned, but suggested: Problems 2, 4 in Section 2.3 }
+% The Course page: http://turing.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=================== Important preamble file
+% contains macro definitions of mysolution, myreview, myupdatedsolution
+\usepackage{preamble387S17}
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+\newcommand{\rednote}[1]{{\color{red} #1}}
+
+
+\begin{document}
+\setcounter{section}{\hwnum - 1}
+\section{Homework \hwnum}
+\emph{ \unassigned}
+
+
+%--------------------------Question
+\subsection{2.2.3}Prove that if $\{ x_n \}$ is a convergent sequence, $k \in \N$, then
+\begin{equation*}
+\lim_{n\to\infty} x_n^k = 
+{\left( \lim_{n\to\infty} x_n \right)}^k .
+\end{equation*}
+Hint: Use {induction}.
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{2.2.6}Let $x_n := \frac{1}{n^2}$ and $y_n := \frac{1}{n}$.  Define
+$z_n := \frac{x_n}{y_n}$ and 
+$w_n := \frac{y_n}{x_n}$.  Do $\{ z_n \}$ and $\{ w_n \}$
+converge?  What are the limits?  Can you apply Proposition 2.2.5?
+Why or why not?
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{2.2.9}Suppose $\{ x_n \}$ is a sequence and suppose for
+some $x \in \R$, the limit
+\begin{equation*}
+L := \lim_{n \to \infty} \frac{\abs{x_{n+1}-x}}{\abs{x_n-x}}
+\end{equation*}
+exists and $L < 1$.  Show that $\{ x_n \}$ converges to $x$.
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+
+%--------------------------Question
+\subsection{2.3.1}Suppose $\{ x_n \}$ is a bounded sequence.  Define $a_n$ and
+$b_n$ as in Definition 2.3.1.  Show that $\{ a_n \}$
+and $\{ b_n \}$ are bounded.
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+
+%--------------------------Question
+\subsection{2.3.3}Finish the proof of Proposition 2.3.6.  That is,
+suppose $\{ x_n \}$ is a bounded sequence and
+$\{ x_{n_k} \}$ is a subsequence.  Prove
+$\displaystyle \liminf_{n\to\infty}\, x_n \leq
+\liminf_{k\to\infty}\, x_{n_k}$.
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{2.3.5}\begin{enumerate}[a)]
+\item
+Let $x_n := \dfrac{{(-1)}^n}{n}$, find $\limsup \, x_n$ and $\liminf \, x_n$.
+\item
+Let $x_n := \dfrac{(n-1){(-1)}^n}{n}$, find $\limsup \, x_n$ and $\liminf \, x_n$.
+\end{enumerate}
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+%--------------------------Question
+\subsection{2.3.9}If $S \subset \R$ is a set, then $x \in \R$ is a \emph{\myindex{cluster
+point}}
+if for every $\epsilon > 0$, the set $(x-\epsilon,x+\epsilon) \cap S
+\setminus \{ x \}$ is not empty.  That is, if there are points of $S$
+arbitrarily close to $x$.
+For example, $S := \{ \nicefrac{1}{n} : n \in \N \}$ has a unique (only
+one) cluster point $0$, but $0 \notin S$.
+Prove the following version of the Bolzano-Weierstrass theorem:
+
+\medskip
+
+\noindent
+\emph{\textbf{Theorem.} Let $S \subset \R$ be a bounded infinite set,
+then there exists at least one cluster point of $S$}.
+
+\medskip
+
+Hint: If $S$ is infinite, then $S$ contains a countably infinite subset.
+That is, there is a sequence $\{ x_n \}$ of distinct numbers in $S$.
+
+\mysolution{
+% YOUR SOLUTION GOES BELOW
+
+} % END OF SOLUTION
+
+
+
+\end{document}

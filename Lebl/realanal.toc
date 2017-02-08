@@ -1,0 +1,172 @@
+\contentsline {chapter}{Introduction}{5}{chapter*.2}
+\contentsline {section}{\numberline {0.1}About this book}{5}{section.0.1}
+\contentsline {section}{\numberline {0.2}About analysis}{7}{section.0.2}
+\contentsline {section}{\numberline {0.3}Basic set theory}{8}{section.0.3}
+\contentsline {subsection}{\numberline {0.3.1}Sets}{8}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {0.3.2}Induction}{11}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {0.3.3}Functions}{13}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {0.3.4}Cardinality}{15}{subsection.0.3.4}
+\contentsline {subsection}{\numberline {0.3.5}Exercises}{17}{subsection.0.3.5}
+\contentsline {chapter}{\numberline {1}Real Numbers}{21}{chapter.1}
+\contentsline {section}{\numberline {1.1}Basic properties}{21}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Exercises}{24}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}The set of real numbers}{25}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}The set of real numbers}{25}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Archimedean property}{27}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Using supremum and infimum}{28}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Maxima and minima}{29}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Exercises}{30}{subsection.1.2.5}
+\contentsline {section}{\numberline {1.3}Absolute value}{31}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Exercises}{34}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Intervals and the size of ${\mathbb {R}}$}{35}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Exercises}{36}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Decimal representation of the reals}{38}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Exercises}{41}{subsection.1.5.1}
+\contentsline {chapter}{\numberline {2}Sequences and Series}{43}{chapter.2}
+\contentsline {section}{\numberline {2.1}Sequences and limits}{43}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Monotone sequences}{46}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Tail of a sequence}{48}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Subsequences}{48}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Exercises}{49}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Facts about limits of sequences}{51}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Limits and inequalities}{51}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Continuity of algebraic operations}{53}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Recursively defined sequences}{56}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Some convergence tests}{57}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Exercises}{60}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Limit superior, limit inferior, and Bolzano-Weierstrass}{61}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Upper and lower limits}{61}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Using limit inferior and limit superior}{63}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Bolzano-Weierstrass theorem}{65}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Infinite limits}{66}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Exercises}{66}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Cauchy sequences}{69}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Exercises}{71}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Series}{72}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Definition}{72}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Cauchy series}{74}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Basic properties}{74}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Absolute convergence}{76}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Comparison test and the $p$-series}{77}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Ratio test}{80}{subsection.2.5.6}
+\contentsline {subsection}{\numberline {2.5.7}Exercises}{81}{subsection.2.5.7}
+\contentsline {section}{\numberline {2.6}More on series}{83}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Root test}{83}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Alternating series test}{84}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Rearrangements}{85}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Multiplication of series}{86}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}Power series}{88}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.6}Exercises}{92}{subsection.2.6.6}
+\contentsline {chapter}{\numberline {3}Continuous Functions}{95}{chapter.3}
+\contentsline {section}{\numberline {3.1}Limits of functions}{95}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Cluster points}{95}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Limits of functions}{96}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Sequential limits}{97}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Limits of restrictions and one-sided limits}{100}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Exercises}{101}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Continuous functions}{103}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Definition and basic properties}{103}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Composition of continuous functions}{106}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Discontinuous functions}{106}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Exercises}{108}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Min-max and intermediate value theorems}{109}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Min-max theorem}{109}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Bolzano's intermediate value theorem}{111}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Exercises}{114}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Uniform continuity}{115}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Uniform continuity}{115}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Continuous extension}{116}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Lipschitz continuous functions}{118}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Exercises}{119}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Limits at infinity}{120}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Limits at infinity}{120}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Infinite limit}{121}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Compositions}{122}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Exercises}{123}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}Monotone functions and continuity}{124}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Continuity of monotone functions}{124}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Continuity of inverse functions}{126}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Exercises}{126}{subsection.3.6.3}
+\contentsline {chapter}{\numberline {4}The Derivative}{129}{chapter.4}
+\contentsline {section}{\numberline {4.1}The derivative}{129}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Definition and basic properties}{129}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Chain rule}{132}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Exercises}{133}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Mean value theorem}{135}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Relative minima and maxima}{135}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Rolle's theorem}{135}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Mean value theorem}{136}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Applications}{137}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Continuity of derivatives and the intermediate value theorem}{138}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Exercises}{140}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Taylor's theorem}{141}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Derivatives of higher orders}{141}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Taylor's theorem}{141}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Exercises}{142}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Inverse function theorem}{144}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Inverse function theorem}{144}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Exercises}{145}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}The Riemann Integral}{147}{chapter.5}
+\contentsline {section}{\numberline {5.1}The Riemann integral}{147}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Partitions and lower and upper integrals}{147}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Riemann integral}{151}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}More notation}{153}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Exercises}{154}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Properties of the integral}{156}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Additivity}{156}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Linearity and monotonicity}{158}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Continuous functions}{159}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Exercises}{162}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Fundamental theorem of calculus}{164}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}First form of the theorem}{164}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Second form of the theorem}{165}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Change of variables}{167}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Exercises}{168}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}The logarithm and the exponential}{170}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}The logarithm}{170}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}The exponential}{172}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Exercises}{173}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Improper integrals}{176}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Integral test for series}{184}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Exercises}{185}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}Sequences of Functions}{189}{chapter.6}
+\contentsline {section}{\numberline {6.1}Pointwise and uniform convergence}{189}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Pointwise convergence}{189}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Uniform convergence}{191}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Convergence in uniform norm}{192}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Exercises}{193}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}Interchange of limits}{195}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Continuity of the limit}{195}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Integral of the limit}{196}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Exercises}{199}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Picard's theorem}{201}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}First order ordinary differential equation}{201}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}The theorem}{201}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Examples}{204}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Exercises}{206}{subsection.6.3.4}
+\contentsline {chapter}{\numberline {7}Metric Spaces}{207}{chapter.7}
+\contentsline {section}{\numberline {7.1}Metric spaces}{207}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Exercises}{212}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Open and closed sets}{214}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Topology}{214}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Connected sets}{216}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Closure and boundary}{218}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Exercises}{219}{subsection.7.2.4}
+\contentsline {section}{\numberline {7.3}Sequences and convergence}{221}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Sequences}{221}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Convergence in euclidean space}{222}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Convergence and topology}{223}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Exercises}{223}{subsection.7.3.4}
+\contentsline {section}{\numberline {7.4}Completeness and compactness}{225}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Cauchy sequences and completeness}{225}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Compactness}{226}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Exercises}{229}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.5}Continuous functions}{230}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Continuity}{230}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Compactness and continuity}{231}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Continuity and topology}{231}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.4}Uniform continuity}{232}{subsection.7.5.4}
+\contentsline {subsection}{\numberline {7.5.5}Exercises}{233}{subsection.7.5.5}
+\contentsline {section}{\numberline {7.6}Fixed point theorem and Picard's theorem again}{234}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Exercises}{236}{subsection.7.6.1}
+\contentsline {chapter}{Further Reading}{237}{section*.4}

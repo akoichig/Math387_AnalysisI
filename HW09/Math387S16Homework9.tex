@@ -1,0 +1,184 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{9}
+\newcommand{\duedate}{Wednesday, April 6}
+\newcommand{\problist}{
+{\bf 5.1} \{1,2,7,10,11\}}
+
+\newcommand{\unassigned}{
+\flushleft 
+Unassigned, but suggested: Problems 3,5 in Section 5.1
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{\hwnum - 1}
+\section{Homework \hwnum}
+\emph{ \unassigned}
+
+
+%--------------------------Question
+\subsection{5.1.1}
+
+Let $f \colon [0,1] \to \R$ be defined by $f(x) := x^3$
+and let $P := \{ 0, 0.1, 0.4, 1 \}$.  Compute $L(P,f)$ and $U(P,f)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.1.2}
+
+Let $f \colon [0,1] \to \R$ be defined by $f(x) := x$.
+Show that $f \in \mathcal R[0,1]$ and
+compute $\int_0^1 f$ using the definition of the integral
+(but
+feel free to use the propositions of this section).%\propref{intulbound:prop}).
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+%--------------------------Question
+\subsection{5.1.7}
+
+Suppose $f \colon [a,b] \to \R$ is Riemann integrable.  Let $\epsilon
+> 0$ be given.  Then show that there exists a partition $P = \{ x_0, x_1,
+\ldots, x_n \}$
+such that if we
+pick any set of numbers $\{ c_1, c_2, \ldots, c_n \}$ with
+$c_k \in [x_{k-1},x_k]$ for all $k$, then
+\begin{equation*}
+\abs{\int_a^b f - \sum_{k=1}^n f(c_k) \Delta x_k} < \epsilon .
+\end{equation*}
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.1.10}
+
+Let $f \colon [0,1] \to \R$ be a bounded function.
+Let $P_n = \{ x_0,x_1,\ldots,x_n \}$ be a uniform partition of $[0,1]$,
+that is, $x_j := \nicefrac{j}{n}$.  Is $\{ L(P_n,f) \}_{n=1}^\infty$
+always monotone?  Yes/No: Prove or find a counterexample.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.1.11}
+
+For a bounded function $f \colon [0,1] \to \R$ let
+$R_n := (\nicefrac{1}{n})\sum_{j=1}^n f(\nicefrac{j}{n})$ (the
+uniform right hand rule).
+a) If $f$ is Riemann integrable show $\int_0^1 f = \lim \, R_n$.
+b) Find an $f$ that is not Riemann integrable, but $\lim \, R_n$ exists.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

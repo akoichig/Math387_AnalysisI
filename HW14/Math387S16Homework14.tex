@@ -1,0 +1,175 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{14}
+\newcommand{\duedate}{Wednesday, May 11}
+\newcommand{\problist}{
+{\bf 7.3} \{1,2,3\}
+{\bf 7.4} \{1,2\}}
+
+\newcommand{\unassigned}{
+\flushleft 
+Unassigned, but suggested: Problem 4 in Section 7.3\\
+Unassigned, but suggested: Problem 4 in Section 7.4
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+\newcommand{\sR}{{\mathcal{R}}} %Riemann Integrable functions
+\newcommand{\rednote}[1]{{\color{red} #1 }}
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{13}
+\section{Homework 14}
+\emph{ \unassigned}
+
+%--------------------------Question
+\subsection{7.3.1}
+
+Let $(X,d)$ be a metric space and
+let $A \subset X$.  Let $E$ be the set of all $x \in X$ such that there
+exists a sequence $\{ x_n \}$ in $A$ that converges to $x$.  Show 
+$E = \overline{A}$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.3.2}
+
+a) Show that $d(x,y) := \min \{ 1, \abs{x-y} \}$ defines a metric on $\R$.
+b) Show that a sequence converges in $(\R,d)$ if and only if it converges
+in the standard metric.  c) Find a bounded sequence in $(\R,d)$ that
+contains no convergent subsequence.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.3.3}
+
+Prove Proposition 7.3.4 which says a convergent sequence in a metric space is bounded.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.4.1}
+
+Let $(X,d)$ be a metric space and $A$ a finite subset of $X$.
+Show that $A$ is compact.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.4.2}
+
+Let $A = \{ \nicefrac{1}{n} : n \in \N \} \subset \R$.  a)~Show that $A$ is
+not compact directly using the definition.  b)~Show that $A \cup \{ 0 \}$ is
+compact directly using the definition.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

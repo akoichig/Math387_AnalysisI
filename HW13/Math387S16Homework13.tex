@@ -1,0 +1,167 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{13}
+\newcommand{\duedate}{Wednesday, May 4}
+\newcommand{\problist}{
+{\bf 7.2} \{1,2,7\}}
+
+\newcommand{\unassigned}{
+\flushleft 
+Unassigned, but suggested: Problems 3,6,8 in Section 7.2
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+\newcommand{\sR}{{\mathcal{R}}} %Riemann Integrable functions
+\newcommand{\rednote}[1]{{\color{red} #1 }}
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{12}
+\section{Homework 13}
+\emph{ \unassigned}
+%--------------------------Question
+\subsection{7.2.1}
+
+Prove Proposition 7.2.8 which says the following:\\ 
+
+Let $(X,d)$ be a metric space.
+\begin{enumerate}[(i)]
+\item \label{topology:closedi} $\emptyset$ and $X$ are closed in $X$.
+\item \label{topology:closedii} If $\{ E_\lambda \}_{\lambda \in I}$ is
+an arbitrary collection of closed sets, then
+\begin{equation*}
+\bigcap_{\lambda \in I} E_\lambda
+\end{equation*}
+is also closed.  That is, intersection of closed sets is closed.
+\item \label{topology:closediii} If $E_1, E_2, \ldots, E_k$ are closed then
+\begin{equation*}
+\bigcup_{j=1}^k E_j
+\end{equation*}
+is also closed.  That is, finite union of closed sets is closed.
+\end{enumerate}
+
+
+Hint: consider the complements of the
+sets and apply Proposition 7.2.6.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.2.2}
+
+Finish the proof of Proposition 7.2.9 by
+proving that $C(x,\delta)$ is closed.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.2.7}
+
+a) Show that $E$ is closed if and only if $\partial E \subset E$.
+b) Show that $U$ is open if and only if $\partial U \cap U = \emptyset$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

@@ -1,0 +1,186 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{10}
+\newcommand{\duedate}{Wednesday, April 13}
+\newcommand{\problist}{
+{\bf 5.2} \{1,2,4,5,7\}}
+
+\newcommand{\unassigned}{
+\flushleft 
+Unassigned, but suggested: Problem 6 in Section 5.2
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+\newcommand{\sR}{{\mathcal{R}}} %Riemann Integrable functions
+\newcommand{\rednote}[1]{{\color{red} #1 }}
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{9}
+\section{Homework 10}
+\emph{ \unassigned}
+
+
+%--------------------------Question
+\subsection{5.2.1}
+
+Let $f$ be in $\sR[a,b]$.  Prove that
+$-f$ is in $\sR[a,b]$ and 
+\begin{equation*}
+\int_a^b - f(x) ~dx = - \int_a^b f(x) ~dx .
+\end{equation*}
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.2.2}
+
+Let $f$ and $g$ be in $\sR[a,b]$.
+Prove that $f+g$ is in $\sR[a,b]$ and
+\begin{equation*}
+\int_a^b f(x)+g(x) ~dx = 
+\int_a^b f(x) ~dx 
++
+\int_a^b g(x) ~dx .
+\end{equation*}
+Hint: Use Proposition 5.1.7 to find a single partition $P$
+such that $U(P,f)-L(P,f) < \nicefrac{\epsilon}{2}$ and
+$U(P,g)-L(P,g) < \nicefrac{\epsilon}{2}$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.2.4}
+
+Prove the \emph{\myindex{mean value theorem for integrals}}.  That is,
+prove that if $f \colon [a,b] \to \R$ is continuous, then there exists
+a $c \in [a,b]$ such that $\int_a^b f = f(c)(b-a)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.2.5}
+
+If $f \colon [a,b] \to \R$ is a continuous function such that $f(x) \geq 0$
+for all $x \in [a,b]$ and $\int_a^b f = 0$.  Prove that $f(x) = 0$
+for all $x$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.2.7}
+
+If $f \colon [a,b] \to \R$ and $g \colon [a,b] \to \R$
+are continuous functions such that $\int_a^b f = \int_a^b g$.
+Then show that there exists a $c \in [a,b]$ such that $f(c) = g(c)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

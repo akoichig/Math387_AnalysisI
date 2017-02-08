@@ -1,0 +1,191 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{11}
+\newcommand{\duedate}{Wednesday, April 20}
+\newcommand{\problist}{
+{\bf 5.3} \{1,2,4,5,6\}}
+
+\newcommand{\unassigned}{
+\flushleft 
+Unassigned, but suggested: Problems 7,10 in Section 5.3
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+\newcommand{\sR}{{\mathcal{R}}} %Riemann Integrable functions
+\newcommand{\rednote}[1]{{\color{red} #1 }}
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{10}
+\section{Homework 11}
+\emph{ \unassigned}
+
+%--------------------------Question
+\subsection{5.3.1}
+
+Compute
+$\displaystyle
+\frac{d}{dx} \biggl( \int_{-x}^x e^{s^2}~ds \biggr)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.3.2}
+
+Compute
+$\displaystyle
+\frac{d}{dx} \biggl( \int_{0}^{x^2} \sin(s^2)~ds \biggr)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.3.4}
+
+Let $f \colon [a,b] \to \R$ be a continuous function.  Let $c \in [a,b]$
+be arbitrary.  Define
+\begin{equation*}
+F(x) := \int_c^x f .
+\end{equation*}
+Prove that $F$ is differentiable and that $F'(x) = f(x)$ for all $x \in
+[a,b]$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.3.5}
+
+Prove \emph{\myindex{integration by parts}}.  That is, suppose $F$ and
+$G$ are continuously differentiable functions on $[a,b]$.  Then prove
+\begin{equation*}
+\int_a^b F(x)G'(x)~dx
+=
+F(b)G(b)-F(a)G(a)
+-
+\int_a^b F'(x)G(x)~dx .
+\end{equation*}
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{5.3.6}
+
+Suppose $F$ and $G$ are continuously
+differentiable
+functions defined on $[a,b]$
+such that $F'(x) = G'(x)$ for all $x \in [a,b]$.
+Using the fundamental theorem of calculus,
+show that $F$ and $G$ differ by a constant.  That is, show that
+there exists a $C \in \R$ such that
+$F(x)-G(x) = C$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

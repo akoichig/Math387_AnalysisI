@@ -1,0 +1,196 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{7}
+\newcommand{\duedate}{Wednesday, March 23}
+\newcommand{\problist}{
+{\bf 3.3} \{1,5,7\}	\\
+{\bf 3.4} \{2,3,7\}	
+}
+
+\newcommand{\unassigned}{
+\flushleft 
+Unassigned, but suggested: Problems 3,6,8 in Section 3.3\\
+Unassigned, but suggested: Problems 1,4,5,6 in Section 3.4
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{\hwnum - 1}
+\section{Homework \hwnum}
+\emph{ \unassigned}
+
+
+%--------------------------Question
+\subsection{3.3.1}
+
+Find an example of a discontinuous function $f \colon [0,1] \to \R$
+where the intermediate value theorem fails.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+%--------------------------Question
+\subsection{3.3.5}
+
+Suppose $g(x)$ is a polynomial of odd degree $d$ such that
+\begin{equation*}
+g(x) = x^d + b_{d-1} x^{d-1} + \cdots + b_1 x + b_0 ,
+\end{equation*}
+for some real numbers $b_{0}, b_1, \ldots, b_{d-1}$.  Show that there exists
+a $K \in \N$ such that $g(-K) < 0$.  Hint: Make sure to use the fact that
+$d$ is odd.  You will have to use that ${(-n)}^d = -(n^d)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.3.7}
+
+Suppose $f \colon [a,b] \to \R$ is a continuous function.  Prove
+that the direct image $f([a,b])$ is a closed and bounded interval or
+a single number.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+%--------------------------Question
+\subsection{3.4.2}
+
+Let $f \colon (a,b) \to \R$ be a uniformly continuous function.
+Finish the proof of Theorem 3.4.6 by showing that
+the limit
+$\displaystyle \lim_{x \to b} f(x)$
+exists.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.4.3}
+
+Show that $f \colon (c,\infty) \to \R$ for some $c > 0$
+and defined by $f(x) := \nicefrac{1}{x}$ is Lipschitz continuous.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.4.7}
+
+Let $f \colon (0,1) \to \R$ be a bounded continuous function.  Show that
+the function
+$g(x) := x(1-x)f(x)$ is uniformly continuous.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

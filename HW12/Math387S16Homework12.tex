@@ -1,0 +1,230 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{12}
+\newcommand{\duedate}{Wednesday, April 27}
+\newcommand{\problist}{
+{\bf 6.1} \{1,2,7\}
+{\bf 6.2} \{1,2\}
+{\bf 7.1} \{1,3,7\}}
+
+\newcommand{\unassigned}{
+\flushleft 
+{\color{red}Note: You can turn in the 7.1 Problems this week or with the next homework.}\\
+Unassigned, but suggested: Problems 4,5,10,11 in Section 6.1\\
+Unassigned, but suggested: Problems 3,5 in Section 6.2\\
+Unassigned, but suggested: Problems 6,7,8 in Section 7.1
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+\newcommand{\sR}{{\mathcal{R}}} %Riemann Integrable functions
+\newcommand{\rednote}[1]{{\color{red} #1 }}
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{11}
+\section{Homework 12}
+\emph{ \unassigned}
+
+%--------------------------Question
+\subsection{6.1.1}
+
+Let $f$ and $g$ be bounded functions on $[a,b]$.  Prove 
+\begin{equation*}
+\norm{f+g}_u \leq \norm{f}_u + \norm{g}_u .
+\end{equation*}
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{6.1.2}
+
+a) Find the pointwise limit $\dfrac{e^{x/n}}{n}$ for $x \in \R$. \nopagebreak
+\\
+b) Is the limit uniform on $\R$?
+\\
+c) Is the limit uniform on $[0,1]$?
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{6.1.7}
+
+Suppose there exists a sequence of functions $\{ g_n \}$ uniformly
+converging to $0$ on $A$.  Now suppose we have a sequence of functions
+$\{ f_n \}$ and a function $f$ on $A$ such that
+\begin{equation*}
+\abs{f_n(x) - f(x)} \leq g_n(x) 
+\end{equation*}
+for all $x \in A$.  Show that $\{ f_n \}$ converges uniformly to $f$ on $A$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{6.2.1}
+
+While uniform convergence preserves continuity, it does not preserve
+differentiability.  Find an explicit example of a sequence of
+differentiable functions on $[-1,1]$ that converge uniformly to
+a function $f$ such that $f$ is not differentiable.  Hint: Consider
+$\abs{x}^{1+1/n}$, show that these functions are differentiable,
+converge uniformly, and then show that the limit is not differentiable.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{6.2.2}
+
+Let $f_n(x) = \frac{x^n}{n}$.  Show that $\{ f_n \}$ converges uniformly to
+a differentiable function $f$ on $[0,1]$ (find $f$).  However, show that
+$\displaystyle f'(1) \not= \lim_{n\to\infty} f_n'(1)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.1.1}
+
+Show that for any set $X$, the discrete metric ($d(x,y) = 1$ if $x\not=y$ and
+$d(x,x) = 0$) does give a metric space $(X,d)$.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.1.3}
+
+Let $X := \{ a, b \}$ be a set.  Can you make it into two distinct metric
+spaces?  (define two distinct metrics on it)
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{7.1.7}
+
+Let $X$ be the set of continuous functions on $[0,1]$.  Let $\varphi \colon
+[0,1] \to (0,\infty)$ be continuous.  Define
+\begin{equation*}
+d(f,g) := \int_0^1 \abs{f(x)-g(x)}\varphi(x)~dx .
+\end{equation*}
+Show that $(X,d)$ is a metric space.
+
+
+\iftoggle{showsolutions}{\begin{solution}
+
+
+\end{solution}}{}
+
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

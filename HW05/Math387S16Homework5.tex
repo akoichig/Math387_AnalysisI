@@ -1,0 +1,184 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{5}
+\newcommand{\duedate}{Wednesday, March 2}
+\newcommand{\problist}{
+{\bf 2.4} \{1,2,4\}\\
+{\bf 2.5} \{1,2\}
+}
+
+\newcommand{\unassigned}{
+\flushleft Unassigned, but suggested: Problems 3,5 in Section 2.4\\
+Unassigned, but suggested: Problems 4,5,6,11 in Section 2.5
+
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{\hwnum - 1}
+\section{Homework \hwnum}
+\emph{ \unassigned}
+
+
+%--------------------------Question
+\subsection{2.4.1}
+Prove that $\{ \frac{n^2-1}{n^2} \}$ is Cauchy using directly the definition
+of Cauchy sequences.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{2.4.2}
+Let $\{ x_n \}$ be a sequence such that
+there exists a $0 < C < 1$ such that
+\begin{equation*}
+\abs{x_{n+1} - x_n} \leq C \abs{x_{n}-x_{n-1}} .
+\end{equation*}
+Prove that $\{ x_n \}$ is Cauchy.
+Hint:  You can freely use the formula (for $C \not= 1$)
+\begin{equation*}
+1+ C+ C^2 + \cdots + C^n = \frac{1-C^{n+1}}{1-C}.
+\end{equation*}
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{2.4.4}
+Let $\{ x_n \}$ and $\{ y_n \}$ be sequences such
+that $\lim\, y_n =0$.  Suppose that for all $k \in \N$
+and
+for all $m \geq k$ we have
+\begin{equation*}
+\abs{x_m-x_k} \leq y_k .
+\end{equation*}
+Show that $\{ x_n \}$ is Cauchy.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{2.5.1}
+For $r \not= 1$, prove
+\begin{equation*}
+\sum_{k=0}^{n-1} r^k = \frac{1-r^n}{1-r} .
+\end{equation*}
+Hint:
+Let $s := \sum_{k=0}^{n-1} r^k$, then
+compute $s(1-r) = s-rs$, and solve for $s$.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{2.5.2}
+Prove that for $-1 < r < 1$ we have
+\begin{equation*}
+\sum_{n=0}^\infty r^n = \frac{1}{1-r} .
+\end{equation*}
+Hint:  Use the previous exercise.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}

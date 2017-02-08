@@ -1,0 +1,191 @@
+\documentclass{article}
+\newcommand{\myname}{Your Name Goes Here}
+\newcommand{\collaborators}{Last Names}
+
+
+\newcommand{\semester}{Spring 2016}
+\newcommand{\hwnum}{6}
+\newcommand{\duedate}{Wednesday, March 9}
+\newcommand{\problist}{
+{\bf 3.1} \{2,3,5\}\\
+{\bf 3.2} \{1,2,3,11\}
+}
+
+\newcommand{\unassigned}{
+\flushleft Unassigned, but suggested: Problems 1,,7,8,10 in Section 3.1\\
+Unassigned, but suggested: Problems 4,5,12 in Section 3.2
+}
+% The Course page: http://home.manhattan.edu/~andrew.greene/387/ also suggests some unassigned problems.
+
+%=============================================================================
+\usepackage{etoolbox}
+\newtoggle{showsolutions}
+%== Show solutions? Comment out one of the lines below
+
+\toggletrue{showsolutions}
+%\togglefalse{showsolutions}
+
+%== The proofs appear below in between "\begin{solution}" and "\end{solution}."
+%=============================================================================
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{nicefrac}
+\usepackage{calc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[draft]{hyperref}
+\usepackage{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage[paper=letterpaper, margin=.75in, headsep=.5in,voffset=0.5in]{geometry}
+
+
+%=================== Useful Commands
+% sets (some)
+\newcommand{\C}{{\mathbb{C}}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\N}{{\mathbb{N}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+% reals
+\newcommand{\sabs}[1]{\lvert {#1} \rvert}
+\newcommand{\snorm}[1]{\lVert {#1} \rVert}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\newcommand{\norm}[1]{\left\lVert {#1} \right\rVert}
+\newcommand{\myindex}[1]{#1} %ignores myindex command from book
+
+
+%=================== Header and Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \textsf{\large\myname}\\
+    Math 387\quad Analysis I \\
+     Homework \hwnum }
+\rhead{H/T: \collaborators\\
+    \semester\\
+    Due: \duedate}
+\chead{ \underline{\textsf{Problem List}}\\[5pt] \problist}
+\rfoot{Page \thepage}
+
+%=================== Section/Subsection Formatting
+\usepackage[explicit]{titlesec}
+
+\titlespacing\section{0pt}{0 pt}{-30 pt}
+\titleformat{\section}
+  {}{}{0em}{}%#1 to diplay "Homework #"
+%  {\centering \LARGE\bfseries}{}{1em}{}%#1 to diplay "Homework #"
+
+\titleformat{\subsection}
+  {\large\bfseries}{\thesubsection}{1em}{Problem {#1}}
+
+
+
+%=================== Solution environment
+\usepackage{mdframed}
+\newenvironment{solution}
+    {\begin{mdframed}\begin{proof}[\itshape Solution]}
+    {\end{proof}\end{mdframed}}
+
+
+\begin{document}
+\setcounter{section}{\hwnum - 1}
+\section{Homework \hwnum}
+\emph{ \unassigned}
+
+
+%--------------------------Question
+\subsection{3.1.2}
+Prove Corollary 3.1.10. %\corref{fconstineq:cor}.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.1.3}
+Prove Corollary 3.1.11. %\corref{fsqueeze:cor}.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.1.5}
+Let $A \subset S$.  Show that if $c$ is a cluster point of $A$, then $c$
+is a cluster point of $S$.  Note the difference from
+Proposition 3.1.14.%\propref{prop:limrest}.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.2.1}
+Using the definition of continuity directly prove that
+$f \colon \R \to \R$ defined by
+$f(x) := x^2$ is continuous.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.2.2}
+Using the definition of continuity directly prove that
+$f \colon (0,\infty) \to \R$ defined by
+$f(x) := \nicefrac{1}{x}$ is continuous.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.2.3}
+Let $f \colon \R \to \R$ be defined by
+\begin{equation*}
+f(x) :=
+\begin{cases}
+x & \text{ if $x$ is rational,} \\
+x^2 & \text{ if $x$ is irrational.}
+\end{cases}
+\end{equation*}
+Using the definition of continuity directly prove that
+$f$ is continuous at $1$ and discontinuous at $2$.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+%--------------------------Question
+\subsection{3.2.11}
+Let $f \colon \R \to \R$ be continuous.  Suppose $f(c) > 0$.  Show that
+there exists an $\alpha > 0$ such that for all $x \in (c-\alpha,c+\alpha)$
+we have $f(x) > 0$.
+
+\iftoggle{showsolutions}{\begin{solution} 
+
+
+\end{solution}}{}
+
+
+
+
+%QUESTION TEMPLATE FOR FUTURE USE
+%--------------------------Question
+%\subsection{}
+%\iftoggle{showsolutions}{\begin{solution} 
+%
+%\end{solution}}{}
+
+
+
+\end{document}
